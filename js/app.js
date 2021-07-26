@@ -8,7 +8,7 @@ let userName = prompt('enter your name please ');
  let question1=question01.toLowerCase();
  if (question1 =='yes' || question1 =='y')
  {
-  console.log("correct answer");
+  //console.log("correct answer");
   alert('correct answer');
 
  }else if(question1 == 'no' || question1 == 'n')
@@ -27,7 +27,7 @@ let userName = prompt('enter your name please ');
      
  } else if(question2 == 'no' || question2 == 'n')
  {
-    console.log("correct answer");
+    //console.log("correct answer");
     alert("correct answer");
  } else {
     alert('yor answer not include yes or no ')
@@ -37,7 +37,7 @@ let question03 = prompt('html stand for hypertext markup language?');
  let question3=question03.toLowerCase();
  if (question3 == 'yes' || question3 == 'y')
  {
-     console.log("correct answer");
+     //console.log("correct answer");
      alert("correct answer");
 
  } else if(question3 == 'no' || question3 == 'n')
@@ -55,7 +55,7 @@ let question03 = prompt('html stand for hypertext markup language?');
 
  } else if(question4 == 'no' || question4 == 'n')
  {
-    console.log("correct answer");
+    //console.log("correct answer");
     alert("correct answer");
     
  } else {
@@ -66,7 +66,7 @@ let question03 = prompt('html stand for hypertext markup language?');
  let question5=question05.toLowerCase();
  if (question5 == 'yes' || question5 == 'y')
  {
-     console.log("correct answer");
+     //console.log("correct answer");
      alert("correct answer");
 
  } else if(question5 == 'no' || question5 == 'n')
