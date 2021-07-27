@@ -1,6 +1,15 @@
 'use strict';
 
 
+
+
+
+
+
+
+
+
+let counter = 0;
 let userName = prompt('enter your name please ');
  alert("hello "+userName+" we ganna ask you 5 questions just for fun and we hope you enjoy^_^ , Your answer must be Yes or No ");
 
@@ -9,6 +18,7 @@ let userName = prompt('enter your name please ');
  if (question1 =='yes' || question1 =='y')
  {
   //console.log("correct answer");
+  counter++;
   alert('correct answer');
 
  }else if(question1 == 'no' || question1 == 'n')
@@ -18,6 +28,7 @@ let userName = prompt('enter your name please ');
  else {
      alert('yor answer not include yes or no ')
  }
+ 
 
  let question02 = prompt('we use html for make pages interact with user?');
  let question2=question02.toLowerCase();
@@ -28,6 +39,7 @@ let userName = prompt('enter your name please ');
  } else if(question2 == 'no' || question2 == 'n')
  {
     //console.log("correct answer");
+    counter++;
     alert("correct answer");
  } else {
     alert('yor answer not include yes or no ')
@@ -38,6 +50,7 @@ let question03 = prompt('html stand for hypertext markup language?');
  if (question3 == 'yes' || question3 == 'y')
  {
      //console.log("correct answer");
+     counter++;
      alert("correct answer");
 
  } else if(question3 == 'no' || question3 == 'n')
@@ -56,6 +69,7 @@ let question03 = prompt('html stand for hypertext markup language?');
  } else if(question4 == 'no' || question4 == 'n')
  {
     //console.log("correct answer");
+    counter++;
     alert("correct answer");
     
  } else {
@@ -67,6 +81,7 @@ let question03 = prompt('html stand for hypertext markup language?');
  if (question5 == 'yes' || question5 == 'y')
  {
      //console.log("correct answer");
+     counter++;
      alert("correct answer");
 
  } else if(question5 == 'no' || question5 == 'n')
@@ -76,7 +91,115 @@ let question03 = prompt('html stand for hypertext markup language?');
     alert('yor answer not include yes or no ')
 }
 
-alert("Thank you for your time "+userName +' we hop you enjoy with our questions')
+
+
+ let numberOfGuessing= 10;
+for(let i =1 ; i<5 ;i++)
+{
+   
+    let guessingNumber = prompt('Enter number between 1 - 20 to  guess the  number that we have ? we will give u four chance to guess that number ');
+    if (guessingNumber<=20 && guessingNumber>0)
+    {
+        
+    
+     if (Number(guessingNumber)<  numberOfGuessing)
+       {
+        alert('too low');
+       } else if( Number(guessingNumber) >  numberOfGuessing)
+       {
+        alert('too high');
+       } else if (guessingNumber == numberOfGuessing){
+        counter++; alert('Great u got it ');
+        console.log(counter);
+        break;
+       } 
+        
+    
+    } else {
+         alert('The number out of the range');
+    }
+
+}
+alert('the correct answer is ' + numberOfGuessing);
+
+let displayValue = prompt('CSS display Property has different vlaue just give me one of this value');
+ let count = 0;
+ let cssDisplay = ['none','inline','block','inline-block'];
+ //console.log(cssDisplay[0]);
+ let bool =false;
+ for (let j = 0 ; j<5 ;j++)
+ {  displayValue = prompt('CSS display Property has different vlaue just give me one of this value');
+    
+    
+   for ( let i =0 ; i<cssDisplay.length ;i++)
+     {
+       if (cssDisplay[i] == displayValue)
+        {  
+         counter++;
+         console.log(counter);
+         alert('correct answer');
+         bool=true;
+         } 
+        
+     }
+     if (bool == true)
+     {
+         break;
+     }
+    
+}
+alert("the correct answer is " + cssDisplay);
+
+
+alert("Total of score : "+ counter +"/7"+ " Grate job" );
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+/*let qu = qu1.toLocaleLowerCase();
+
+while( qu != 'yes' || qu != 'y')
+{
+    let qu = prompt('enter yes or no ');
+}*/
+
+
+
+
+/*let userName = prompt('pleas enter your name ');
+while(!userName){
+    userName = prompt('pleas enter your name ');
+}
+
+let qu1 = prompt('enter yes or no ');
+let qu = qu1.toLocaleLowerCase();
+
+let count =0;
+
+qu = qu1.toLocaleLowerCase();
+if(qu === 'yes' || qu === 'y'){
+    count++;
+    alert('Corrcrt');
+} else 
+{
+    alert("wrong answer")
+}
+
+console.log(count);
+*/
+
+
+
+
 
 
  
