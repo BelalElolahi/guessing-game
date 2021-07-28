@@ -1,16 +1,7 @@
 'use strict';
 
-
-
-
-
-
-
-
-
-
 let counter = 0;
-/*let userName = prompt('enter your name please ');
+let userName = prompt('enter your name please ');
  alert("hello "+userName+" we ganna ask you 5 questions just for fun and we hope you enjoy^_^ , Your answer must be Yes or No ");
 
  let question01 = prompt('we using  css  for styling pages of html?');
@@ -89,14 +80,13 @@ let question03 = prompt('html stand for hypertext markup language?');
      alert("wrong answer");
  } else {
     alert('yor answer not include yes or no ')
-}*/
+}
 
 
 
  let numberOfGuessing= 10;
 for(let i =0 ; i<4 ;i++)
-{
-    let guessingNumber = prompt('Enter number between 1 - 20 to  guess the  number that we have ? we will give u four chance to guess that number ');
+{ let guessingNumber = prompt('Enter number between 1 - 20 to  guess the  number that we have ? we will give u four chance to guess that number ');
     if (guessingNumber<=20 && guessingNumber>0)
     {
         if (guessingNumber == numberOfGuessing){
@@ -157,7 +147,7 @@ let flag = false;
 alert("this is All the possible answer : " + cssDisplay);
 
 
-alert("Total of score : "+ counter +"/7"+ " Grate job" );
+alert("Total of your score : "+ counter +"/7"+ " Grate job" );
 
 
 
