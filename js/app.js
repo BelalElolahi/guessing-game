@@ -10,7 +10,7 @@
 
 
 let counter = 0;
-let userName = prompt('enter your name please ');
+/*let userName = prompt('enter your name please ');
  alert("hello "+userName+" we ganna ask you 5 questions just for fun and we hope you enjoy^_^ , Your answer must be Yes or No ");
 
  let question01 = prompt('we using  css  for styling pages of html?');
@@ -89,66 +89,72 @@ let question03 = prompt('html stand for hypertext markup language?');
      alert("wrong answer");
  } else {
     alert('yor answer not include yes or no ')
-}
+}*/
 
 
 
  let numberOfGuessing= 10;
-for(let i =1 ; i<5 ;i++)
+for(let i =0 ; i<4 ;i++)
 {
-   
     let guessingNumber = prompt('Enter number between 1 - 20 to  guess the  number that we have ? we will give u four chance to guess that number ');
     if (guessingNumber<=20 && guessingNumber>0)
     {
-        
-    
-     if (Number(guessingNumber)<  numberOfGuessing)
-       {
-        alert('too low');
-       } else if( Number(guessingNumber) >  numberOfGuessing)
+        if (guessingNumber == numberOfGuessing){
+            counter++; alert('Great u got it ');
+            console.log(counter);
+            break;
+           } 
+         else if( Number(guessingNumber) >  numberOfGuessing)
        {
         alert('too high');
-       } else if (guessingNumber == numberOfGuessing){
-        counter++; alert('Great u got it ');
-        console.log(counter);
-        break;
+       } else if (Number(guessingNumber) <  numberOfGuessing)
+       {
+        alert('too low');
+       
        } 
-        
     
     } else {
          alert('The number out of the range');
     }
 
-}
-alert('the correct answer is ' + numberOfGuessing);
+    if (i === 3)
+    {
+        alert(' you finshed your attembts the correct answer is ' + numberOfGuessing);
+    }
 
-let displayValue = prompt('CSS display Property has different vlaue just give me one of this value');
- let count = 0;
- let cssDisplay = ['none','inline','block','inline-block'];
- //console.log(cssDisplay[0]);
- let bool =false;
- for (let j = 0 ; j<5 ;j++)
- {  displayValue = prompt('CSS display Property has different vlaue just give me one of this value');
-    
-    
-   for ( let i =0 ; i<cssDisplay.length ;i++)
-     {
-       if (cssDisplay[i] == displayValue)
-        {  
-         counter++;
-         console.log(counter);
-         alert('correct answer');
-         bool=true;
-         } 
-        
-     }
-     if (bool == true)
-     {
-         break;
-     }
+}
+
+
+
+let cssDisplay = ['none','inline','block','inline-block'];
+let flag = false;
+ for (let j = 0 ; j<=5 ;j++)
+ {  
+     
+    let displayValue = prompt('CSS display Property has different vlaue just give me one of this value');
+     for ( let i =0 ; i<cssDisplay.length ;i++)
+       {
+         if (cssDisplay[i] == displayValue)
+          {  
+           counter++;
+           //console.log(counter);
+           alert('correct answer');
+           flag=true;
+           break; 
+          }
+           
+        }
+ if (flag == true){
+        break;
+    }
+
+ if(j === 5){
+    alert('sorry you finshed your attembts');
+
+    }
     
 }
-alert("the correct answer is " + cssDisplay);
+alert("this is All the possible answer : " + cssDisplay);
 
 
 alert("Total of score : "+ counter +"/7"+ " Grate job" );
