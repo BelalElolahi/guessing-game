@@ -14,52 +14,6 @@ while(!userName)
 alert("hello "+userName+" we ganna ask you 5 questions just for fun and we hope you enjoy^_^ , Your answer must be Yes or No ");
 
 }
-/*let questionsArray = ['Do you think my  age its more than 20 years old  ?','Do you think i like mansaf ?','Do you think I like football sports','Do you think I live in amman ?','Do you think I like programming ?'];
-for (let i =0;i<questionsArray.length;i++)
-{
- let question = prompt(questionsArray[i]);
- let question1=question.toLowerCase();
-
- // this is a wile loop to make the user answer just yes or no
- while(question1 !== 'yes'&& question1 !== 'y'&& question1 !== 'no'&& question1 !== 'n')
- {
-    question = prompt(questionsArray[i]);
-     question1=question.toLowerCase();
-  }
- 
-  if (questionsArray.indexOf('Do you think i like mansaf ?') == i || questionsArray.indexOf('Do you think I live in amman ?') == i)
-   {
-    if (question1 == 'yes' || question1 == 'y')
-    {
-       alert("wrong answer");
-   
-    } else if(question1 == 'no' || question1 == 'n')
-    {
-       //console.log("correct answer");
-       counter++;
-       alert("correct answer");
-       
-    } else {
-       alert('yor answer not include yes or no ')
-    }
-
-   } else {
-    if (question1 =='yes' || question1 =='y')
-    {
-     //console.log("correct answer");
-     counter++;
-     alert('correct answer');
-   
-    }else if(question1 == 'no' || question1 == 'n')
-    {
-      alert("wrong answer");
-    } 
-    else {
-        alert('yor answer not include yes or no ')
-    }
- }
-
-}*/
 
 function askUserAboutTheCss(){
  let question01 = prompt('we using  css  for styling pages of html?');
