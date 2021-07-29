@@ -4,6 +4,7 @@ let counter = 0;
 function userName(){
 let userName = prompt('enter your name please ');
 
+
 // while loop t make sure the user don't enter embty value 
 while(!userName)
 { 
@@ -13,8 +14,54 @@ while(!userName)
 alert("hello "+userName+" we ganna ask you 5 questions just for fun and we hope you enjoy^_^ , Your answer must be Yes or No ");
 
 }
+/*let questionsArray = ['Do you think my  age its more than 20 years old  ?','Do you think i like mansaf ?','Do you think I like football sports','Do you think I live in amman ?','Do you think I like programming ?'];
+for (let i =0;i<questionsArray.length;i++)
+{
+ let question = prompt(questionsArray[i]);
+ let question1=question.toLowerCase();
 
-function Qustion1(){
+ // this is a wile loop to make the user answer just yes or no
+ while(question1 !== 'yes'&& question1 !== 'y'&& question1 !== 'no'&& question1 !== 'n')
+ {
+    question = prompt(questionsArray[i]);
+     question1=question.toLowerCase();
+  }
+ 
+  if (questionsArray.indexOf('Do you think i like mansaf ?') == i || questionsArray.indexOf('Do you think I live in amman ?') == i)
+   {
+    if (question1 == 'yes' || question1 == 'y')
+    {
+       alert("wrong answer");
+   
+    } else if(question1 == 'no' || question1 == 'n')
+    {
+       //console.log("correct answer");
+       counter++;
+       alert("correct answer");
+       
+    } else {
+       alert('yor answer not include yes or no ')
+    }
+
+   } else {
+    if (question1 =='yes' || question1 =='y')
+    {
+     //console.log("correct answer");
+     counter++;
+     alert('correct answer');
+   
+    }else if(question1 == 'no' || question1 == 'n')
+    {
+      alert("wrong answer");
+    } 
+    else {
+        alert('yor answer not include yes or no ')
+    }
+ }
+
+}*/
+
+function askUserAboutTheCss(){
  let question01 = prompt('we using  css  for styling pages of html?');
  let question1=question01.toLowerCase();
  if (question1 =='yes' || question1 =='y')
@@ -32,7 +79,7 @@ function Qustion1(){
  }
 }
 
-function Qustion2(){
+function AskUserAbboutHTML(){
  let question02 = prompt('we use html for make pages interact with user?');
  let question2=question02.toLowerCase();
  if (question2 == 'yes' || question2 == 'y')
@@ -49,7 +96,7 @@ function Qustion2(){
 }
 }
 
- function Qustion3(){
+ function AskUserAbboutHTMLStandFor(){
 let question03 = prompt('html stand for hypertext markup language?');
 let question3=question03.toLowerCase();
  if (question3 == 'yes' || question3 == 'y')
@@ -67,7 +114,7 @@ let question3=question03.toLowerCase();
 
 }
 
- function Qustion4(){
+ function askUserAboutJavaSicript(){
  let question04 = prompt("javascript is not programming language?");
  let question4=question04.toLowerCase();
  if (question4 == 'yes' || question4 == 'y')
@@ -85,7 +132,7 @@ let question3=question03.toLowerCase();
 }
 }
 
-function Qustion5(){
+function askUserAboutInteractPage(){
  let question05 = prompt("we use javascript to make pages more interact with user?");
  let question5=question05.toLowerCase();
  if (question5 == 'yes' || question5 == 'y')
@@ -102,7 +149,7 @@ function Qustion5(){
 }
 }
 
-function Qustion6(){
+function guessingNumber(){
  let numberOfGuessing= 10;
 for(let i =0 ; i<4 ;i++)
 { let guessingNumber = prompt('Enter number between 1 - 20 to  guess the  number that we have ? we will give u four chance to guess that number ');
@@ -134,7 +181,7 @@ for(let i =0 ; i<4 ;i++)
 }
 }
 
-function Qustion7(){
+function AskUserAboutCSSProprty(){
 let cssDisplay = ['none','inline','block','inline-block']; let flag = false;
  for (let j = 0 ; j<=5 ;j++)
  {  
@@ -166,13 +213,15 @@ alert("this is All the possible answer : " + cssDisplay);
 }
 
 userName();
-Qustion1();
-Qustion2();
-Qustion3();
-Qustion4();
-Qustion5();
-Qustion6();
-Qustion7();
+askUserAboutTheCss();
+AskUserAbboutHTML();
+AskUserAbboutHTMLStandFor();
+askUserAboutJavaSicript();
+askUserAboutInteractPage();
+guessingNumber();
+AskUserAboutCSSProprty();
+
+
 
 alert("Total of your score : "+ counter +"/7"+ " Grate job" );
 
