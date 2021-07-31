@@ -5,8 +5,7 @@ let counter = 0;
 function userName(){
 let userName = prompt('enter your name please ');
 
-
-// while loop t make sure the user don't enter embty value 
+// while loop t make sure the user don't enter embty value
 while(!userName)
 { 
     userName = prompt('pleas enter your name '); 
